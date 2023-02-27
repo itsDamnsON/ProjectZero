@@ -1,3 +1,12 @@
+let docTitle= document.title
+window.addEventListener("blur", () => {
+    document.title = "Comeback to me :("
+})
+
+window.addEventListener("focus", () => {
+    document.title = docTitle
+})
+
 // var c = document.getElementById("canvas");
 // var ctx = c.getContext("2d");
 
